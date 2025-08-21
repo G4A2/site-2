@@ -1,0 +1,199 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Color variables based on Eminem's style: dark, gray, and a splash of color */
+:root {
+    --cinza-escuro: #2C3E50;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --cinza-claro: #ECF0F1;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+}
+
+header {
+    background-color: var(--preto);
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+/* Navigation bar styling */
+.nav-link {
+    color: var(--branco);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #C0C0C0; /* Light gray on hover */
+}
+
+/* Hero section with a dark, urban feel */
+.inicio-fundo {
+    background-image: url('img/eminem-bg.jpg'); /* New background image for Eminem theme */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7); /* Adds a vignette effect */
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5)); /* Adds a shadow to the image */
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+    border-radius: 5px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-inicio:hover {
+    background-color: #A0A0A0;
+}
+
+.display-4 {
+    font-family: 'Bebas Neue', sans-serif; /* A font with a more bold, urban look */
+    color: var(--branco);
+    text-shadow: 2px 2px 5px var(--preto);
+}
+
+/* Thematic section "Quem é Eminem?" */
+#eminem-bio {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    /* Removed the flowers background to fit the new theme */
+}
+
+#eminem-bio .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    color: var(--cinza-claro);
+    text-shadow: 1px 1px 3px var(--preto);
+}
+
+/* Gallery section styling */
+#galeria {
+    background-color: var(--preto);
+}
+
+.fundo-galeria {
+    /* No longer has a background image to match the clean, dark theme */
+    background: none;
+}
+
+/* Contact section styling */
+#contato {
+    background-image: url('img/microphone-bg.jpg'); /* New, themed background */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.formulario h2 {
+    color: var(--cinza-claro);
+}
+
+.formulario button {
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #A0A0A0;
+}
+
+.form-control {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    border: 1px solid #555;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+/* Accessibility menu styling */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+    background-color: var(--cinza-claro) !important;
+    color: var(--preto) !important;
+    border: none;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+    border: none;
+    font-weight: bold;
+}
+
+.apresenta-lista {
+    display: none;
+}
